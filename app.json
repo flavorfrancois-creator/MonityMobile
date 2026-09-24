@@ -7,7 +7,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "monityworld",
     "userInterfaceStyle": "dark",
-    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.monityworld.mobile",
@@ -25,7 +24,6 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#0a0a0f"
       },
-      "edgeToEdgeEnabled": true,
       "permissions": [
         "android.permission.NFC",
         "android.permission.CAMERA",
@@ -64,7 +62,10 @@
         {
           "nfcPermission": "Lire les cartes NFC Monity"
         }
-      ]
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
