@@ -14,9 +14,9 @@
       "infoPlist": {
         "NSCameraUsageDescription": "Scanner les codes-barres des cartes Monity",
         "NFCReaderUsageDescription": "Lire les cartes NFC Monity pour paiements",
-        "NSPhotoLibraryUsageDescription": "Sauvegarder les re\u00e7us de transaction",
+        "NSPhotoLibraryUsageDescription": "Sauvegarder les reçus de transaction",
         "NSContactsUsageDescription": "Trouver rapidement vos contacts",
-        "NSFaceIDUsageDescription": "Authentification s\u00e9curis\u00e9e"
+        "NSFaceIDUsageDescription": "Authentification sécurisée"
       }
     },
     "android": {
@@ -32,7 +32,8 @@
         "android.permission.READ_CONTACTS",
         "android.permission.VIBRATE",
         "android.permission.USE_BIOMETRIC",
-        "android.permission.USE_FINGERPRINT"
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "web": {
@@ -52,7 +53,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/splash-image.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#0a0a0f"
@@ -70,7 +71,12 @@
       "baseUrl": "/mobile-app"
     },
     "extra": {
-      "apiUrl": "https://www.monityworld.link"
-    }
+      "apiUrl": "https://www.monityworld.link",
+      "router": {},
+      "eas": {
+        "projectId": "09b835f1-b6fd-4e79-8092-6506f6e79781"
+      }
+    },
+    "owner": "flavoren"
   }
 }
